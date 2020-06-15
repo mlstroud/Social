@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+@using Social.Models
+Hi @Model.UserName
+Your Email: @Model.Email
+<hr>
+<h3>Your Friends</h3>
+
+@foreach(ApplicationUser user in ViewBag.Friends)
+{
+  <p>@user.UserName</p>
+}

@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="padding-left: 20%;">
+  <a class="navbar-brand" href="#"><span style="color: orange;"><strong>M</strong></span>odular</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link"})
+      </li>
+      <li class="nav-item">
+        @Html.ActionLink("FindFriends", "FindFriends", "Home", null, new { @class = "nav-link"})
+      </li>
+    </ul>
+    @if(User.Identity.IsAuthenticated)
+    {
+      <ul class="navbar-nav">
+        <li class="navbar-username">
+          Welcome, @User.Identity.Name</li>
+        <li class="nav-item">
+          @using (Html.BeginForm("Logout", "Account"))
+          {
+            <input type="submit" class="btn btn-outline-danger" value="Log Out">
+          }
+        </li>
+      </ul>
+    }
+    else
+    {
+      <ul class="navbar-nav d-flex justify-content-end">
+        <li class="nav-item">
+          @Html.ActionLink("Log In", "Login", "Account", null, new { @class = "nav-link"})
+        </li>
+        <li class="nav-item">
+          @Html.ActionLink("Register", "Register", "Account", null, new { @class = "nav-link"})
+        </li>
+      </ul>  
+    }
+    <form class="form-inline my-2 my-lg-0" style="margin-right: 25%; margin-left: 10px;">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Social.Models
+
+@foreach(ApplicationUser user in Model)
+{
+  <p>@Html.ActionLink($"{@user.UserName}", "Profile", "Home", new { name = user.UserName})</p>
+  @using (Html.BeginForm("FindFriends", "Home"))
+  {
+    @Html.Hidden("userName", @user.UserName)
+    <input type="submit" class="btn btn-primary" value="Add Friend">
+  }
+}
