@@ -1,0 +1,45 @@
+@{
+    Layout = "_Layout";
+}
+
+@using Social.Models
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <input type="hidden" id="userInput" value="@User.Identity.Name">
+            Message...<input type="text" id="messageInput" />
+            <select id="sendToUser">
+                @foreach(Friend friend in ViewBag.Friends)
+                {
+                    <option value="@friend.UserFriend.Id">@friend.UserFriend.UserName</option>
+                }
+            </select>
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+            @foreach(Message message in ViewBag.Messages)
+            {
+                <li>@message.FromUser.UserName says @message.Content</li>
+            }
+            @* @foreach(Message message in ViewBag.ToMessages)
+            {
+                <li>@message.FromUser.UserName says @message.Content</li>
+            } *@
+
+        </div>
+    </div>
+</div>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>

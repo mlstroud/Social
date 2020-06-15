@@ -46,17 +46,36 @@ namespace Social.Controllers
     }
 
     [HttpPost]
-    public ActionResult FindFriends(string userName)
+    public ActionResult AddFriend(string userName)
     {
-      // ApplicationUser userToAdd = _db.Users.Where(users => users.UserName == userName).FirstOrDefault();
-      // Friend newFriend = new Friend();
-      // string myName = User.FindFirstValue(ClaimTypes.Name);
-      // newFriend.User = _db.Users.Where(users => users.UserName == myName).FirstOrDefault();
-      // newFriend.UserFriend = userToAdd;
-      // Console.WriteLine(newFriend.User);
-      // Console.WriteLine(newFriend.UserFriend);
+      ApplicationUser userToAdd = _db.Users.Where(users => users.UserName == userName).FirstOrDefault();
+      Friend newFriend = new Friend();
+      string myName = User.FindFirstValue(ClaimTypes.Name);
+      newFriend.User = _db.Users.Where(users => users.UserName == myName).FirstOrDefault();
+      newFriend.UserFriend = userToAdd;
+      _db.Friends.Add(newFriend);
+      _db.SaveChanges();
       Console.WriteLine(userName);
       return RedirectToAction("Index", "Home");
+    }
+
+    [HttpGet("/Chat")]
+    public ActionResult Chat()
+    {
+      string myName = User.FindFirstValue(ClaimTypes.Name);
+      ApplicationUser thisUser = _db.Users.Where(users => users.UserName == myName).FirstOrDefault();
+      ViewBag.User = thisUser;
+      ViewBag.Friends = _db.Friends.Where(user => user.User.UserName == myName).Include(user => user.UserFriend).ToList();
+      ViewBag.Messages = _db.Messages.Where(message => message.FromUser.Id == thisUser.Id);
+
+
+      return View();
+    }
+
+    [HttpGet]
+    public ActionResult Test()
+    {
+      return View();
     }
   }
 }

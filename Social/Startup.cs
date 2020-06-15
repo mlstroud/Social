@@ -65,7 +65,7 @@ namespace Social
 
       app.UseSignalR(routes =>
       {
-        routes.MapHub<ChatHub>("/chathub");
+        routes.MapHub<ChatHub>("/chatHub");
       });
     }
   }

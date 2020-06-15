@@ -2999,6 +2999,16 @@
       "FilePath": "d:\\Desktop\\TeamWeek\\Social.Solution\\Social\\Views\\Home\\AddFriend.cshtml",
       "TargetPath": "Views\\Home\\AddFriend.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Desktop\\TeamWeek\\Social.Solution\\Social\\Views\\Home\\Chat.cshtml",
+      "TargetPath": "Views\\Home\\Chat.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Desktop\\TeamWeek\\Social.Solution\\Social\\Views\\Home\\Test.cshtml",
+      "TargetPath": "Views\\Home\\Test.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

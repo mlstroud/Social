@@ -11,5 +11,6 @@ namespace Social.Models
     public virtual DbSet<Post> Posts { get; set; }
     public virtual DbSet<Friend> Friends { get; set; }
     public virtual DbSet<ApplicationUser> Users { get; set; }
+    public virtual DbSet<Message> Messages { get; set; }
   }
 }

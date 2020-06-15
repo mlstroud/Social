@@ -7,7 +7,7 @@ Your Email: @Model.Email
 <hr>
 <h3>Your Friends</h3>
 
-@foreach(ApplicationUser user in ViewBag.Friends)
+@foreach(Friend user in ViewBag.Friends)
 {
-  <p>@user.UserName</p>
+  <p>@user.UserFriend</p>
 }

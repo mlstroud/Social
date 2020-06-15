@@ -30,3 +30,5 @@ D:\Desktop\TeamWeek\Social.Solution\Social\obj\Debug\netcoreapp2.2\Razor\Views\A
 D:\Desktop\TeamWeek\Social.Solution\Social\obj\Debug\netcoreapp2.2\Razor\Views\Home\FindFriends.cshtml.g.cs
 D:\Desktop\TeamWeek\Social.Solution\Social\obj\Debug\netcoreapp2.2\Razor\Views\Home\Profile.cshtml.g.cs
 D:\Desktop\TeamWeek\Social.Solution\Social\obj\Debug\netcoreapp2.2\Razor\Views\Home\AddFriend.cshtml.g.cs
+D:\Desktop\TeamWeek\Social.Solution\Social\obj\Debug\netcoreapp2.2\Razor\Views\Home\Chat.cshtml.g.cs
+D:\Desktop\teamweek\Social.Solution\social\obj\Debug\netcoreapp2.2\Razor\Views\Home\Test.cshtml.g.cs

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\TeamWeek\\Social.Solution\\Social\\Social.csproj": {}
+    "D:\\Desktop\\teamweek\\Social.Solution\\social\\Social.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\TeamWeek\\Social.Solution\\Social\\Social.csproj": {
+    "D:\\Desktop\\teamweek\\Social.Solution\\social\\Social.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\TeamWeek\\Social.Solution\\Social\\Social.csproj",
+        "projectUniqueName": "D:\\Desktop\\teamweek\\Social.Solution\\social\\Social.csproj",
         "projectName": "Social",
-        "projectPath": "D:\\Desktop\\TeamWeek\\Social.Solution\\Social\\Social.csproj",
+        "projectPath": "D:\\Desktop\\teamweek\\Social.Solution\\social\\Social.csproj",
         "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\TeamWeek\\Social.Solution\\Social\\obj\\",
+        "outputPath": "D:\\Desktop\\teamweek\\Social.Solution\\social\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",

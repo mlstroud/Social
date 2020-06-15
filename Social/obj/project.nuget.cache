@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h12yYjcnPrfJ2xAJnbwJSrrglI2xm8vR2qypAc4NBs7raKSezA1RViiomvTND+ePJ/KrkDNlfe/0qR8VpHdcJQ==",
+  "dgSpecHash": "/4dE5dCwWowVaNCwiwMYAhUtpEDaMTrMqDzxWE665z8WidDfgAzVfYsr6C3iwGcTwtWU4FnoiwSLyFxkdEkxTA==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\TeamWeek\\Social.Solution\\Social\\Social.csproj",
+  "projectFilePath": "D:\\Desktop\\teamweek\\Social.Solution\\social\\Social.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matt\\.nuget\\packages\\castle.core\\4.2.1\\castle.core.4.2.1.nupkg.sha512",
     "C:\\program files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
